@@ -87,7 +87,7 @@ func newChannel2(server irckit.Server, name string) irckit.Channel {
 
 		}()
 	}
-	ret.Topic(server, "")
+	ret.Topic(server, "-")
 	return ret
 }
 func PoorTopicImpl(s irckit.Server, u *irckit.User, msg *irct.Message) error {
